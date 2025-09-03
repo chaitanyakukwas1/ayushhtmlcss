@@ -1,0 +1,6 @@
+HTML5 is the latest version with advanced features such as
+    i. semantic elements: semantic elements are introduced in HTML5. They help to make readable and SEO freindly
+    Eg: header,main,footer,nav,article,section eic..,
+    ii.media elements: media elements are used to  show media in more simple and easy way 
+    Eg: video,audio,picture,iframe,etc..,
+    iii.svg:scalable vector graphics are used to include drawings into HTML

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Basic form for profile creation in matrimonial site</h1>
+    <p>Note: All * fields are mandatory</p>
+    <form action="" >
+        <div class="input">
+            <label for="na">Enter full name:*</label>
+            <input type="text" value="mr" disabled name="" id="">
+            <input type="text" placeholder="Enter full name" id="na" pattern="[A-Z]{3}"  required>
+        </div>
+        <br>
+        <div class="input">
+            <label for="em">Email</label>
+            <input type="email" placeholder="Enter email" id="em" pattern="^[A-Za-z0-9]+@\w+\.[A-Za-z0-9]{2,}$">
+        </div>
+        <br>
+        <div class="input">
+            <label for="phno">Phone:</label>
+            <input type="number" id="phno" placeholder="Enter phone number" pattern="[0-9]{10}" message="Enter 10 digit">
+        </div>
+        <br>
+        <div class="input">
+            <label for="dt">Date of Birth</label>
+            <input type="date" id="dt" required>
+        </div>
+        <br>
+        <div class="input">
+            <label for="plc">place</label>
+            <input type="text" placeholder="Place" id="plc" required>
+        </div>
+        <br>
+        <div class="input">
+            <label for="sl">salary</label>
+            <input type="number" placeholder="min 20lpa" id="sl" min="20">
+        </div>
+        <br>
+        <div class="input">
+            <span>Gender:</span>
+            <input type="radio" name="gen" value="male" id="ge" checked>
+            <label for="ge">Male</label>
+            <input type="radio" name="gen" value="female" id="gef" checked>
+            <label for="gef">Female</label>
+        </div>
+        <br>
+        <div class="input">
+            <span>Zodiac Sign: </span>
+            <select name="zodiac" id="zodiac">
+                <option value="leo">leo</option>
+                <option value="cancer">cancer</option>
+                <option value="Gemini">Gemini</option>
+                <option value="Libra">Libra</option>
+                <option value="Virgo">Virgo</option>
+                <option value="Taurus">Taurus</option>
+                <option value="Aries">Aries</option>
+                <option value="Scorpius">Scorpius</option>
+            </select>
+        </div>
+        <br>
+        <div class="input">
+            <label for="Photo">Photo:</label>
+            <input type="file" name="Photo" id="Photo" accept=".jpg,.png">
+        </div>
+        <br>
+        <div class="input">
+            <span>caste:</span>
+            <input type="checkbox" name="caste" id="obc">
+            <label for="obc">OBC</label>
+            <input type="checkbox" name="caste" id="bc">
+            <label for="bc">BC</label>
+            <input type="checkbox" name="caste" id="sc/st">
+            <label for="sc/st">SC/ST</label>
+            <input type="checkbox" name="caste" id="none">
+            <label for="none">None</label>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
